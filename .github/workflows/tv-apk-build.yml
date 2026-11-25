@@ -1,0 +1,95 @@
+name: Build TV APK
+
+# Builds the Android TV debug APK. Triggered by pushing this file itself (the integration token
+# cannot call workflow_dispatch) and still runnable by hand via the Actions tab.
+# The APK is uploaded as a downloadable artifact ("nuviotv-full-debug-arm64").
+# The debug build signs with the release config; CI generates a throwaway keystore
+# using the passwords already defaulted in app/build.gradle.kts.
+# Optional: set repo secrets SUPABASE_URL / SUPABASE_ANON_KEY to bake a backend into the CI APK.
+# With no secrets set, the build ships with EMPTY backend keys — the app cannot reach any hosted
+# backend, which is exactly the privacy-first posture of this fork.
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches: [main]
+    paths: ['.github/workflows/tv-apk-build.yml']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tv-apk-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build unsigned TV APK (full, arm64)
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
+
+      - name: Install SDK packages
+        run: sdkmanager "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+
+      - name: Generate signing keystore
+        run: |
+          keytool -genkeypair -v -keystore nuviotv.jks -alias nuviotv \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -storepass 815787 -keypass 815787 \
+            -dname "CN=Tuvora CI, OU=CI, O=Tuvora, L=NA, S=NA, C=US"
+
+      - name: Create local.properties with empty backend keys
+        run: |
+          touch local.properties
+          {
+            echo "SUPABASE_URL="
+            echo "SUPABASE_ANON_KEY="
+            echo "NUVIO_SUPABASE_FALLBACK_URL="
+            echo "TMDB_API_KEY="
+            echo "TRAKT_CLIENT_ID="
+            echo "TRAKT_CLIENT_SECRET="
+            echo "SIMKL_CLIENT_ID="
+            echo "SIMKL_CLIENT_SECRET="
+            echo "DONATIONS_DONATE_URL="
+          } >> local.properties
+
+      - name: Raise Gradle heap for packaging
+        run: printf '\norg.gradle.jvmargs=-Xmx6g -Dfile.encoding=UTF-8\n' >> gradle.properties
+
+      - name: Run unit tests
+        run: ./gradlew :app:testFullDebugUnitTest --stacktrace
+
+      - name: Build TV debug APK (arm64-v8a only)
+        run: ./gradlew :app:assembleFullDebug -Pandroid.injected.build.abi=arm64-v8a --stacktrace
+
+      - name: Collect APK
+        run: |
+          mkdir -p dist
+          cp "$(find app/build -path '*/full/debug/*' -name '*.apk' | head -1)" dist/
+          ls -la dist
+
+      - name: Upload TV APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: nuviotv-full-debug-arm64
+          path: dist/*.apk
+          if-no-files-found: error
+          retention-days: 14

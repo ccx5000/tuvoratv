@@ -8,14 +8,13 @@ import org.junit.Test
 class DiagnosticsConsentPolicyTest {
 
     /**
-     * The gate shipped in TV v1.4.19 / mobile v1.4.20 defaulted to off, and because it drives
-     * PostHog's opt-out it silenced every event, not only crashes. Measured two weeks later: 416
-     * reporting users were on builds from before the gate and 11 on builds after it, so the app went
-     * effectively blind as people updated.
+     * Privacy fork: an untouched install reports NOTHING until the user explicitly opts in.
+     * Upstream defaults to on (see their v1.4.19 measurement); this default is deliberately
+     * reversed so no diagnostics, crashes, or playback events leave the device by default.
      */
     @Test
-    fun `an untouched install reports by default`() {
-        assertTrue(resolveDiagnosticsEnabled(stored = null))
+    fun `an untouched install reports nothing by default`() {
+        assertFalse(resolveDiagnosticsEnabled(stored = null))
     }
 
     /** An explicit no is a decision, and survives the change of default. */

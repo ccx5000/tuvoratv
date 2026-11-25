@@ -657,10 +657,14 @@ class AuthManager @Inject constructor(
 
     /**
      * Clear session state before switching to a different custom server. The custom-server
-     * feature is gated off in this fork (FEATURE_CUSTOM_SERVER_CONNECTIONS_ENABLED = false), so
-     * this is a no-op that reports success; kept so the inert ServerConnection UI compiles.
+     * feature is compiled in (FEATURE_CUSTOM_SERVER_CONNECTIONS_ENABLED = true), so the old
+     * server's credentials and account-local data must go before the new configuration is
+     * saved: a fresh server must never inherit the previous one's session state.
      */
-    suspend fun prepareForServerSwitch(): Result<Unit> = Result.success(Unit)
+    suspend fun prepareForServerSwitch(): Result<Unit> {
+        signOut(SessionEndReason.USER_SIGN_OUT)
+        return Result.success(Unit)
+    }
 }
 
 private fun Throwable.isJwtExpiredError(): Boolean {
