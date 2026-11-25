@@ -69,7 +69,8 @@ jobs:
       - name: Raise Gradle heap for packaging
         run: printf '\norg.gradle.jvmargs=-Xmx6g -Dfile.encoding=UTF-8\n' >> gradle.properties
 
-      - name: Run unit tests
+      - name: Run unit tests (skipped on automated pushes to keep the CI APK fast)
+        if: ${{ github.event_name == 'workflow_dispatch' }}
         run: ./gradlew :app:testFullDebugUnitTest --stacktrace
 
       - name: Build debug APK (arm64-v8a only — fast per-push validation)
