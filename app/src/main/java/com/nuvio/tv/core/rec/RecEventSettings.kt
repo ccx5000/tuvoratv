@@ -33,9 +33,12 @@ class RecEventSettings @Inject constructor(
 ) {
     private val preferences = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
 
-    private val _enabled = MutableStateFlow(preferences.getBoolean(KEY_ENABLED, true))
+    // Privacy fork: the stored value wins, but a fresh install starts with recommendation
+    // telemetry OFF — nothing about what is shown or watched leaves the device until the user
+    // opts in from Settings > Diagnostics.
+    private val _enabled = MutableStateFlow(preferences.getBoolean(KEY_ENABLED, false))
 
-    /** "Share anonymous usage to improve recommendations" — on by default, off instantly. */
+    /** "Share anonymous usage to improve recommendations" — off by default, on only by explicit choice. */
     val enabled: StateFlow<Boolean> = _enabled.asStateFlow()
 
     @Volatile

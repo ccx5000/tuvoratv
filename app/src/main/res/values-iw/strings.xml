@@ -594,7 +594,7 @@
     <string name="advanced_section_performance">ביצועים וניווט</string>
     <string name="advanced_section_diagnostics">אבחון</string>
     <string name="advanced_sentry_reports">דוחות קריסה של Sentry</string>
-    <string name="advanced_sentry_reports_subtitle">שליחת דוחות קריסה ו-ANR עם הקשר בטוח. מופעל כברירת מחדל.</string>
+    <string name="advanced_sentry_reports_subtitle">שולח דוחות קריסה, ANR ושימוש אנונימי עם הקשר בטוח. כבוי כברירת מחדל — הפעל כדי להתחיל לשלוח דוחות מהמכשיר הזה.</string>
     <string name="advanced_playback_issue_reports">דיווחי תקלות הפעלה</string>
     <string name="advanced_playback_issue_reports_subtitle">הצגת כפתורי דיווח במהלך הפעלה, טעינה ממושכת ושגיאות הפעלה</string>
     <string name="advanced_player_stats_hud">שכבת נתוני הפעלה</string>

@@ -592,7 +592,7 @@
     <string name="advanced_section_performance">Performance &amp; navigation</string>
     <string name="advanced_section_diagnostics">Diagnostics</string>
     <string name="advanced_sentry_reports">Crash &amp; usage reports</string>
-    <string name="advanced_sentry_reports_subtitle">Send crash, ANR and anonymous usage reports with safe context. On by default — turn it off to stop sending anything from this device.</string>
+    <string name="advanced_sentry_reports_subtitle">Send crash, ANR and anonymous usage reports with safe context. Off by default — turn it on to start sending reports from this device.</string>
     <string name="advanced_playback_issue_reports">Playback issue reports</string>
     <string name="advanced_playback_issue_reports_subtitle">Show report buttons during playback, long loading, and playback errors</string>
     <string name="advanced_player_stats_hud">Playback stats overlay</string>

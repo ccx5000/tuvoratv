@@ -506,7 +506,7 @@
     <string name="advanced_section_performance">Performanca dhe navigimi</string>
     <string name="advanced_section_diagnostics">Diagnostikimi</string>
     <string name="advanced_sentry_reports">Raportet e dështimeve Sentry</string>
-    <string name="advanced_sentry_reports_subtitle">Dërgo raporte për dështime dhe ANR me kontekst të sigurt. Aktivizuar si parazgjedhje.</string>
+    <string name="advanced_sentry_reports_subtitle">Dërgon raporte për rrëzimet, ANR dhe përdorimin anonim me kontekst të sigurt. Çaktivizuar si parazgjedhje — aktivizojeni që të fillojë dërgimi i raporteve nga kjo pajisje.</string>
     <string name="advanced_playback_issue_reports">Raportet e problemeve të riprodhimit</string>
     <string name="advanced_playback_issue_reports_subtitle">Shfaq butonat e raportimit gjatë riprodhimit, ngarkimeve të gjata dhe gabimeve të riprodhimit</string>
     <string name="sentry_enable_dialog_title">Të aktivizohen raportet e dështimeve?</string>

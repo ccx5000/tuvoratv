@@ -571,7 +571,7 @@
     <string name="advanced_section_performance">效能與導航</string>
     <string name="advanced_section_diagnostics">診斷</string>
     <string name="advanced_sentry_reports">Sentry 崩潰報告</string>
-    <string name="advanced_sentry_reports_subtitle">傳送包含安全內容的崩潰和 ANR 報告。預設開啟。</string>
+    <string name="advanced_sentry_reports_subtitle">在安全的上下文中傳送當機、ANR 與匿名使用情況報告。預設關閉——開啟後才會開始從此裝置傳送報告。</string>
     <string name="advanced_playback_issue_reports">播放問題報告</string>
     <string name="advanced_playback_issue_reports_subtitle">在播放期間、長時間載入和播放錯誤時顯示報告按鈕</string>
     <string name="advanced_player_stats_hud">播放統計覆蓋層</string>

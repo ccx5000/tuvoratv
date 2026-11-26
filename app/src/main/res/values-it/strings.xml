@@ -542,7 +542,7 @@
 <string name="advanced_section_performance">Prestazioni e navigazione</string>
 <string name="advanced_section_diagnostics">Diagnostica</string>
 <string name="advanced_sentry_reports">Segnalazioni di crash Sentry</string>
-<string name="advanced_sentry_reports_subtitle">Invia segnalazioni di crash e ANR con contesto sicuro. Attivo per impostazione predefinita.</string>
+<string name="advanced_sentry_reports_subtitle">Invia segnalazioni di arresti anomali, ANR e utilizzo anonimo con contesto sicuro. Disattivato per impostazione predefinita: attivalo per iniziare a inviare segnalazioni da questo dispositivo.</string>
 <string name="advanced_playback_issue_reports">Resoconti dei problemi di riproduzione</string>
 <string name="advanced_playback_issue_reports_subtitle">Mostra i pulsanti di segnalazione durante la riproduzione, nei caricamenti lunghi e negli errori di riproduzione</string>
 <string name="advanced_player_stats_hud">Overlay statistiche di riproduzione</string>

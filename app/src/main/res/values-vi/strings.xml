@@ -592,7 +592,7 @@
     <string name="advanced_section_performance">Hiệu năng &amp; điều hướng</string>
     <string name="advanced_section_diagnostics">Chẩn đoán</string>
     <string name="advanced_sentry_reports">Báo cáo sự cố Sentry</string>
-    <string name="advanced_sentry_reports_subtitle">Gửi báo cáo sự cố và lỗi ứng dụng không phản hồi kèm thông tin an toàn. Bật theo mặc định.</string>
+    <string name="advanced_sentry_reports_subtitle">Gửi báo cáo lỗi, ANR và sử dụng ẩn danh với ngữ cảnh an toàn. Mặc định đang tắt — bật để bắt đầu gửi báo cáo từ thiết bị này.</string>
     <string name="advanced_playback_issue_reports">Báo cáo vấn đề phát lại</string>
     <string name="advanced_playback_issue_reports_subtitle">Hiển thị các nút báo cáo trong khi phát lại, tải lâu và khi phát lại bị lỗi</string>
     <string name="advanced_player_stats_hud">Lớp phủ thống kê phát lại</string>

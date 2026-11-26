@@ -590,7 +590,7 @@
     <string name="advanced_section_performance">Prestaties &amp; navigatie</string>
     <string name="advanced_section_diagnostics">Diagnostiek</string>
     <string name="advanced_sentry_reports">Sentry-crashrapporten</string>
-    <string name="advanced_sentry_reports_subtitle">Verstuur crash- en ANR-rapporten met veilige context. Standaard ingeschakeld.</string>
+    <string name="advanced_sentry_reports_subtitle">Verzendt crash-, ANR- en anonieme gebruiksrapporten met veilige context. Standaard uit — schakel het in om rapporten vanaf dit apparaat te gaan verzenden.</string>
     <string name="advanced_playback_issue_reports">Rapporten over afspeelproblemen</string>
     <string name="advanced_playback_issue_reports_subtitle">Toon rapportageknoppen tijdens het afspelen, bij lang laden en bij afspeelfouten</string>
     <string name="advanced_player_stats_hud">Overlay met afspeelstatistieken</string>

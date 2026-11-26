@@ -2463,7 +2463,7 @@
 <string name="settings_content_discovery_plugins_subtitle">Spravovať repozitáre a poskytovateľov streamov.</string>
 <string name="external_auto_next_loading">Načítavanie ďalšej epizódy…</string>
 <string name="advanced_sentry_reports">Správy o zlyhaní Sentry</string>
-<string name="advanced_sentry_reports_subtitle">Odosielať hlásenia o pádoch a zamrznutiach (ANR) s bezpečným kontextom; predvolene zapnuté.</string>
+<string name="advanced_sentry_reports_subtitle">Odosiela hlásenia o pádoch, ANR a anonymnom používaní s bezpečným kontextom. Predvolene vypnuté — zapnite, aby toto zariadenie začalo odosielať hlásenia.</string>
 <string name="advanced_playback_issue_reports">Hlásenia o problémoch s prehrávaním</string>
 <string name="advanced_playback_issue_reports_subtitle">Zobrazovať tlačidlá hlásení počas prehrávania, dlhého načítavania a chýb prehrávania</string>
 <string name="sentry_enable_dialog_title">Zapnúť správy o zlyhaní?</string>

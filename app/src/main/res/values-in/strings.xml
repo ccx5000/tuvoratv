@@ -2562,7 +2562,7 @@
     <string name="simkl_name">Simkl</string>
     <string name="external_auto_next_loading">Memuat episode berikutnya…</string>
     <string name="advanced_sentry_reports">Laporan crash Sentry</string>
-    <string name="advanced_sentry_reports_subtitle">Kirim laporan crash dan ANR dengan konteks aman. Aktif secara default.</string>
+    <string name="advanced_sentry_reports_subtitle">Mengirim laporan kerusakan, ANR, dan penggunaan anonim dengan konteks yang aman. Mati secara bawaan — aktifkan untuk mulai mengirim laporan dari perangkat ini.</string>
     <string name="advanced_playback_issue_reports">Laporan masalah pemutaran</string>
     <string name="advanced_playback_issue_reports_subtitle">Tampilkan tombol laporan selama pemutaran, pemuatan lama, dan error pemutaran</string>
     <string name="advanced_player_stats_hud">Overlay statistik pemutaran</string>

@@ -3287,7 +3287,7 @@
   <string name="settings_style_horizon">Επάνω γραμμή</string>
   <string name="settings_style_horizon_desc">Καρτέλες πλοήγησης στο επάνω μέρος</string>
   <string name="advanced_sentry_reports">Αναφορές σφαλμάτων Sentry</string>
-  <string name="advanced_sentry_reports_subtitle">Αποστολή αναφορών σφαλμάτων και ANR με ασφαλές πλαίσιο δεδομένων. Ενεργό από προεπιλογή.</string>
+  <string name="advanced_sentry_reports_subtitle">Αποστολή αναφορών σφαλμάτων, ANR και ανώνυμης χρήσης με ασφαλές πλαίσιο. Ανενεργό από προεπιλογή — ενεργοποιήστε το για να αρχίσει η αποστολή αναφορών από αυτήν τη συσκευή.</string>
   <string name="sentry_enable_dialog_title">Ενεργοποίηση αναφορών σφαλμάτων;</string>
   <string name="sentry_enable_dialog_subtitle">Οι αναφορές σφαλμάτων βοηθούν στον εντοπισμό προβλημάτων που αφορούν τη συσκευή σας, χωρίς να χρειάζεται να αναπαράγετε το πρόβλημα με αρχεία καταγραφής ADB.</string>
   <string name="sentry_disable_dialog_title">Απενεργοποίηση αναφορών σφαλμάτων;</string>

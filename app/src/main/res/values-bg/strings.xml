@@ -589,7 +589,7 @@
     <string name="advanced_section_performance">Производителност и навигация</string>
     <string name="advanced_section_diagnostics">Диагностика</string>
     <string name="advanced_sentry_reports">Отчети за сривове на Sentry</string>
-    <string name="advanced_sentry_reports_subtitle">Изпращане на отчети за сривове и ANR с безопасен контекст. Включено по подразбиране.</string>
+    <string name="advanced_sentry_reports_subtitle">Изпращане на доклади за сривове, ANR и анонимно използване със защитен контекст. Изключено по подразбиране — включете го, за да започне изпращането на доклади от това устройство.</string>
     <string name="advanced_playback_issue_reports">Отчети за проблеми с възпроизвеждането</string>
     <string name="advanced_playback_issue_reports_subtitle">Показване на бутони за докладване по време на възпроизвеждане, продължително зареждане и грешки при възпроизвеждане</string>
     <string name="advanced_player_stats_hud">Наслагване на статистика за възпроизвеждане</string>

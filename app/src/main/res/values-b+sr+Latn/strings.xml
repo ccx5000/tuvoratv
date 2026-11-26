@@ -569,7 +569,7 @@
     <string name="advanced_section_performance">Performanse i navigacija</string>
     <string name="advanced_section_diagnostics">Dijagnostika</string>
     <string name="advanced_sentry_reports">Sentry izveštaji o rušenju</string>
-    <string name="advanced_sentry_reports_subtitle">Šaljite izveštaje o rušenju i ANR-u sa bezbednim kontekstom. Uključeno po podrazumevanoj vrednosti.</string>
+    <string name="advanced_sentry_reports_subtitle">Šalje izveštaje o padovima, ANR-u i anonimnoj upotrebi sa sigurnim kontekstom. Isključeno po podrazumevanim podešavanjima — uključite da ovaj uređaj počne da šalje izveštaje.</string>
     <string name="advanced_playback_issue_reports">Izveštaji o problemima sa reprodukcijom</string>
     <string name="advanced_playback_issue_reports_subtitle">Prikaži dugmad za izveštaj tokom reprodukcije, dugog učitavanja i grešaka u reprodukciji</string>
     <string name="advanced_player_stats_hud">Preklop sa statistikama reprodukcije</string>

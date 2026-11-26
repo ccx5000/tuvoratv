@@ -2996,7 +2996,7 @@
     <string name="advanced_player_stats_hud">تراكب إحصاءات التشغيل</string>
     <string name="advanced_player_stats_hud_subtitle">إظهار زر في معلومات المصدر لتبديل عرض قراءات مباشرة للمعالج والذاكرة والمخزن المؤقت ومعدل البت والحرارة أثناء التشغيل</string>
     <string name="advanced_sentry_reports">تقارير أعطال Sentry</string>
-    <string name="advanced_sentry_reports_subtitle">إرسال تقارير الأعطال وحالات عدم استجابة التطبيق (ANR) مع سياق آمن. مفعّل افتراضيًا.</string>
+    <string name="advanced_sentry_reports_subtitle">إرسال تقارير الأعطال وANR وتقارير الاستخدام المجهولة مع سياق آمن. متوقف افتراضيًا — فعّله لبدء إرسال التقارير من هذا الجهاز.</string>
     <string name="appearance_settings_style">نمط الإعدادات</string>
     <string name="appearance_settings_style_subtitle">اختر طريقة عرض شاشات الإعدادات</string>
     <string name="appearance_launcher_artwork">صورة التطبيق في المشغّل</string>
